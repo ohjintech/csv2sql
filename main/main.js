@@ -2,18 +2,13 @@ const csvParse = require('csv-parse');
 const fs = require('fs');
 const path = require('path');
 const { cpuUsage } = require('process');
-
-const db = require('./dbModel');
+// const db = require('./dbModel');
 
 const target = path.join(__dirname, '../assets/AlumniDirectory.csv')
-console.log('target path: ', target)
 
+// Note: after running this script, run the psql command in a CMD terminal with the following template:
+// psql -d <postgres url> -f sampleDB.sql
 
-
-console.log(fs.readFileSync(target))
-
-
-const columnsObj = {};
 
 fs.readFile((target), (err, data) => {
   csvParse(data, {columns: true, trim: true }, (err, rows) => {
