@@ -1,0 +1,25 @@
+{
+  "name": "csv2sql",
+  "version": "1.0.0",
+  "description": "csv to SQL database converter",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohjintech/csv2sql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohjintech/csv2sql/issues"
+  },
+  "homepage": "https://github.com/ohjintech/csv2sql#readme",
+  "dependencies": {
+    "csv": "^5.5.0",
+    "csv-parse": "^4.16.0",
+    "csv-parser": "^3.0.0",
+    "pg": "^8.6.0"
+  }
+}
